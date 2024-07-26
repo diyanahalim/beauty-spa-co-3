@@ -76,7 +76,7 @@
 .next-slick-arrow:before,
 .prev-slick-arrow:before {
     content: "";
-    background-image: url("../assets/arrow4.png");
+    background-image: url("../assets/arrow.png");
     background-size: cover;
     position: absolute;
     top: 50%;
@@ -130,7 +130,7 @@
 
 
 .review-container-right {
-    background-image: url(../assets/huheuhablue.png);
+    background-image: url(../assets/home-review-leaf.png);
     background-position: 75% 65%;
     background-size: cover;
     display: flex;

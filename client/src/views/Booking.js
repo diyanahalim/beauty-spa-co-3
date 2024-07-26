@@ -115,7 +115,6 @@ const Booking = (_) => {
                 type="text" 
                 name="customer_name" 
                 placeholder="Your full name.."  
-                inputMode="decimal" 
                 value={formData.customer_name}
                 onChange={handleChange}
               />
@@ -126,7 +125,6 @@ const Booking = (_) => {
                 type="text" 
                 name="customer_email" 
                 placeholder="Your email.." 
-                inputMode="decimal" 
                 value={formData.customer_email}
                 onChange={handleChange}
               />
@@ -148,7 +146,6 @@ const Booking = (_) => {
                 className="input-date" 
                 selected={appointment_date} 
                 dateFormat="dd/MM/YYYY"  
-                inputMode="decimal" 
                 onChange={(date) => setAppointmentDate(date)}
               />
 
@@ -156,7 +153,6 @@ const Booking = (_) => {
               <select 
                 name="appointment_time" 
                 value={formData.appointment_time} 
-                inputMode="decimal" 
                 onChange={handleChange}
               >
                 {options.map((option) => (
@@ -173,7 +169,7 @@ const Booking = (_) => {
               <div className='success-message'>
                 <h1>Your booking has been submitted successfully.</h1>
                 <p>Check your booking details in your email~</p>
-                <button type='submit' className='book-again-button' onClick={bookAgain}>Book Again</button>`
+                <button type='submit' className='book-again-button' onClick={bookAgain}>Book Again</button>
               </div>
             )}
             </div>

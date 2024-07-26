@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import image1 from '../assets/flower-painted-real.png';
-import image2 from '../assets/grid-bg-yellow.png';
-import image3 from '../assets/founder.jpg';
+import image1 from '../assets/about-flower.png';
+import image2 from '../assets/about-grid-bg-yellow.png';
+import image3 from '../assets/about-founder.jpg';
 import "../views/About.css";
 
 const About = () => {

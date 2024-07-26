@@ -34,8 +34,8 @@ const Icon = styled(props => (
 
 const styles = {
   background: 'transparent',
-  borderTop: '1px solid black', 
-  borderBottom: '1px solid black', 
+  borderTop: '0.5px solid black', 
+  borderBottom: '0.5px solid black', 
   boxShadow: 'none',
   borderRadius: '0',
 };
@@ -62,7 +62,6 @@ const Contact = () => {
                   id="fullname" 
                   name="fullname" 
                   placeholder="Your full name.."  
-                  inputMode="decimal" 
                 />
             <label className="email">Email Address</label>
                 <input 
@@ -70,7 +69,6 @@ const Contact = () => {
                   id="email" 
                   name="email" 
                   placeholder="Your email address.."  
-                  inputMode="decimal" 
                 />
             <label className="phone-number">Phone Number</label>
                 <input 
@@ -85,7 +83,6 @@ const Contact = () => {
                   id="comments" 
                   name="comments" 
                   placeholder="Your comments or questions"  
-                  inputMode="decimal" 
                 />
             <input type="submit" value="Send Message"></input>
           </form>

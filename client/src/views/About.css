@@ -4,7 +4,7 @@
 }
 
 .about .text-container {
-    background-image: url(../assets/paper-background.png);
+    background-image: url(../assets/about-paper-bg.png);
     background-size: cover;
     padding: 5rem;
     display: flex;

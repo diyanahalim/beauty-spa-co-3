@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
 import "../views/Home.css";
-import image1 from '../assets/weednewwoo.png';
+import image1 from '../assets/home-leaf.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
