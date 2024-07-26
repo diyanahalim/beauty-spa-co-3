@@ -15,7 +15,7 @@ const Icon = styled(props => (
 & > .y {
   display: block;
   font-size: 2rem;
-  font-family: "Maisondeartisan";
+  font-family: "Maisondeartisan" !important;
   color: black;
 }
 & > .n {

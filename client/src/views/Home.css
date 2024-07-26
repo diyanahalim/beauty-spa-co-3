@@ -155,17 +155,17 @@
 }
 
 .review-container-right h1 {
-    font-family: "LagencyfreeRegular";
+    font-family: "LagencyfreeRegular" !important;
 }
 
 .review-container-right h1:before { 
     content: open-quote; 
-    font-family: "Maisondeartisan";
+    font-family: "Maisondeartisan" !important;
 }
 
 .review-container-right h1:after  { 
     content: close-quote; 
-    font-family: "Maisondeartisan";
+    font-family: "Maisondeartisan" !important;
 }
 
 .slick-track {
