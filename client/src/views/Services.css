@@ -1,0 +1,87 @@
+.services {
+    background: #fdf6e6;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.services-grid-container {
+    display: grid;
+    grid-template-columns: 16rem 16rem 16rem;
+    margin: auto;
+    width: fit-content;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.services-grid-item {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.services-grid-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.services-grid-item h1 {
+    font-family: "Maisondeartisan";
+    font-size: 1.4rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 100%;
+}
+
+.services-grid-item p {
+    font-size: 0.8rem;
+    font-family: "Teachers", sans-serif !important;
+}
+
+.services-grid-item .book-link {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -97%);
+    font-size: 0.8rem;
+    color: black;
+}
+
+.parent-stack {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: -1.3rem;
+}
+
+.stack-1 {
+    left: 1rem;
+}
+
+.stack-2 {
+    right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+.services-grid-container {
+      
+    width: 100%;
+    grid-template-columns: 1fr;
+    border-left: unset;
+}
+
+.services-grid-item {
+    border-right: unset;
+    border-top: 1px solid black;
+}
+
+.services-grid-item img {
+    height: 20rem;
+}
+}

@@ -1,0 +1,137 @@
+.contact {
+    height: fit-content;
+    background: rgb(227, 230, 233);
+}
+
+.contact-us-container {
+    height: fit-content;
+    background-image: url(../assets/weednewwoo.png);
+    background-size: cover;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.contact-us-left {
+    background: #fef5ed;
+    width: 50%;
+    padding: 1rem 5rem;
+    border-right: 1px solid black;
+}
+
+.contact-us-right {
+    padding: 1rem;
+}
+
+.contact-us-right .text-container {
+    width: 50%;
+    text-align: right;
+    float: right;
+    margin-top: 7rem;
+}
+
+.contact h1 {
+    font-family: "Maisondeartisan";
+}
+
+.contact-form h1, .contact-us-right h1, .contact-us-right p {
+    font-family: "Maisondeartisan";
+}
+
+.contact-form h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-us-right h1 {
+    font-size: 5rem;
+}
+
+.contact-form {
+    background: transparent;
+}
+
+.contact-form, input::placeholder, textarea::placeholder {
+    font-size: 0.8rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 2rem;
+    background: rgb(186, 219, 231);
+    color: #000000;
+    padding: 1rem 2rem;
+    margin: 8px 0;
+    border: 1px transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+  
+input[type=submit]:hover {
+    background-color: rgb(223, 233, 237);
+}
+
+.faq-container {
+    height: fit-content;
+    display: flex;
+    padding: 5rem 0;
+}
+
+.faq-container h1 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.accordion-summary {
+    font-family: "Space Mono";
+}
+
+@media screen and (max-width: 700px) {
+
+.contact-us-container, .faq-container {
+    flex-direction: column;
+}
+
+.contact-us-left {
+    width: 100%;
+    padding: 2rem 2rem;
+    border-right: unset;
+    border-bottom: 1px solid black;
+}
+
+.contact-us-right {
+    height: 15rem;
+}
+
+.faq-container h1 {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.faq-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+}
+
+@media screen and (min-width: 700px) {
+    .contact-us-left {
+        padding: 2rem 2rem;
+    }
+
+    .faq-container {
+        padding-right: 1rem;
+    }
+}

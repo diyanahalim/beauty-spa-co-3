@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "LagencyfreeRegular";   /*Can be any text*/
+  src: local("LagencyfreeRegular"),
+    url("./assets/fonts/LagencyfreeRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ahganirya";   /*Can be any text*/
+  src: local("Ahganirya"),
+    url("./assets/fonts/Ahganirya.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Maisondeartisan";   /*Can be any text*/
+  src: local("Maisondeartisan"),
+    url("./assets/fonts/Maisondeartisan.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: "Teachers", sans-serif;
+  /* font-family: "LagencyfreeRegular"; */
+  box-sizing: border-box !important;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  background: #fef5ed;
+  /* max-width: 100%; */
+  width: 100%; /* full window width */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+}
+
+html, body, :root {
+  height: 100%;
+}
+  
+:root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

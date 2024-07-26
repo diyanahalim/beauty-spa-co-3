@@ -1,0 +1,246 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about .text-container {
+    background-image: url(../assets/paper-background.png);
+    background-size: cover;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.about .image1-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.about .image1-container {
+    height: 30rem;
+}
+
+.about .text-container p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.4rem;
+}
+
+.about h1 {
+    font-family: "Maisondeartisan"; 
+}
+
+.about .founder-section {
+    display: flex;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.about .founder-section .background {
+    width: 13%;
+}
+
+.about .founder-section-item {
+    display: flex;
+    padding: 3rem 5rem 3rem 3rem;
+    background: #faf5d9;
+    width: 74%;
+}
+
+.about .founder-section-item .image-container {
+    width: 150rem;
+    height: 30rem;
+}
+
+.about .founder-section-item .text-container {
+    background: transparent;
+    display: unset;
+    flex-direction: unset;
+    text-align: left;
+}
+
+.about .founder-section-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .founder-section-item h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about .founder-section-item p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.9rem;
+}
+
+.paragraph1::after,
+.paragraph2::after {
+    content: "\A";
+    white-space: pre;
+    display: block;
+}
+  
+.scrolling-text--item span {
+    transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); 
+ }
+
+ .scrolling-text {
+    background-color: transparent;
+    color: #000;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    font-size: 0.9rem;
+}
+  
+.scrolling-text:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    pointer-events: none;
+    background: transparent;
+}
+  
+.scrolling-text-uppercase--true {
+    text-transform: uppercase; 
+}
+
+.scrolling-text--inner {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    background: #fef5ed;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text--inner.direction-left > div {
+    animation: scrollText-left 30s linear infinite; 
+}
+    
+.scrolling-text--inner.direction-right > div {
+    animation: scrollText-right 30s linear infinite; 
+}
+    
+.scrolling-text--inner > div {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; 
+}
+    
+.scrolling-text--item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px; 
+}
+    
+.scrolling-text--link {
+    display: inline-flex;
+    align-items: center; 
+}
+    
+.scrolling-text--link span {
+    transform-origin: left bottom; 
+}
+    
+.scrolling-text--link:hover {
+    color: #000; 
+}
+    
+.scrolling-text--link:hover span {
+    transform: skew(-10deg, 0); 
+}
+    
+@keyframes scrollText-left {
+    0% {
+    transform: translateX(0%); 
+    }
+    100% {
+    transform: translateX(-100%); 
+    } 
+}
+    
+@keyframes scrollText-right {
+    0% {
+    transform: translateX(-100%); 
+    }
+    100% {
+    transform: translateX(0%); 
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    
+.about-container, .founder-section{
+    flex-direction: column;
+}
+
+.about .founder-section .background {
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.about .image1-container img {
+    height: 20rem;
+}
+
+.about .text-container {
+    padding: 3rem;
+}
+
+.about .text-container p {
+    text-align: center;
+}
+
+.about .founder-section-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: unset;
+}
+
+.about .founder-section-item .image-container {
+    width: 15rem;
+    height: 20rem;
+    margin-top: -5rem;
+}
+
+.founder-section-item .text-container {
+    padding: 3rem 2rem;
+}
+
+.founder-section-item .text-container p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+
+    .about .image1-container img {
+        height: 100%;
+    }
+
+    .about .text-container {
+        padding: 2rem;
+    }
+}

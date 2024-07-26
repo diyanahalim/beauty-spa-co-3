@@ -1,0 +1,249 @@
+.home {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background: #fef5ed;
+    box-sizing: border-box;
+}
+
+.home h1 {
+    font-family: "Maisondeartisan";
+}
+
+.column {
+    flex: 50%;
+}
+
+.home-container {
+    display: flex;
+    height: fit-content;
+}
+
+.home .image1-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.home .text-container {
+    padding: 0 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.home .gallery-container {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 3rem 8rem;
+}
+
+.home .slider-container {
+    margin: auto;
+}
+
+.gallery-container .image-container {
+    display: flex;
+    justify-content: center;
+    max-width: 30rem !important;
+    height: 15rem;
+    margin: auto;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+  
+.next-slick-arrow:before,
+.prev-slick-arrow:before {
+    content: "";
+    background-image: url("../assets/arrow4.png");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 3rem;
+    height: 3rem;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: transparent !important;
+}
+
+.flip-horizontally {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: scaleX(-1);
+}
+
+.review-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-container-left {
+    background: #fff8d4;
+    padding: 2rem 7rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.review-container-left h1 {
+    margin-bottom: 1rem;
+}
+
+.review-container-left p {
+    font-size: 0.9rem;
+}
+
+.home .book-button {
+    background: rgb(186, 219, 231);
+    color: #000000;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: table;
+    width: 8rem;
+    margin: 1rem auto 0 !important;
+}
+
+
+.review-container-right {
+    background-image: url(../assets/huheuhablue.png);
+    background-position: 75% 65%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    quotes: '\201c' '\201d';
+    text-align: center;
+    padding: 0 5rem;
+}
+
+.review-text-container {
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+}
+
+.review-text-container p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.review-container-right h1 {
+    font-family: "LagencyfreeRegular";
+}
+
+.review-container-right h1:before { 
+    content: open-quote; 
+    font-family: "Maisondeartisan";
+}
+
+.review-container-right h1:after  { 
+    content: close-quote; 
+    font-family: "Maisondeartisan";
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+@media screen and (max-width: 700px) {
+
+.home-container, .review-container {
+    flex-direction: column;
+}
+
+.review-container-right {
+    width: 100%;
+    height: 10%;
+}
+}
+
+@media  (max-width: 600px) {
+
+.home h1 {
+    font-size: 2rem;
+}
+
+.home .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+.home-container h1 {
+    margin-bottom: 1rem;
+}
+    
+.gallery-container h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.home .gallery-container {
+    padding: 2rem 2rem;
+}
+
+.home .slider-container {
+    width: 70%;
+}
+
+.next-slick-arrow:before,
+.prev-slick-arrow:before {
+    width: 2rem;
+    height: 2rem;
+}
+
+.review-container-left {
+    padding: 2rem 2rem;
+}
+
+.review-container-right {
+    padding: 1rem;
+}
+
+.review-container-left h1 {
+    font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+
+.review-container-left {
+    padding: 2rem 1rem;
+}
+
+.review-container-right {
+    padding: 0 1rem;
+}
+
+}
+  

@@ -1,0 +1,173 @@
+.booking {
+    display: flex;
+}
+
+.booking .left-side {
+    width: 50%;
+    border-right: 1px solid black;
+    padding: 5rem 5rem;
+    background-image: url(../assets/breathnewhuhu.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking .right-side {
+    width: 50%;
+    background: #fef5ed;
+    padding: 2rem 4rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 30rem;
+}
+
+.package-name {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    white-space: nowrap;
+}
+
+.booking h1, .booking p{
+    font-family: "Maisondeartisan";
+}
+
+.booking .left-side > p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1rem;
+}
+
+.booking .left-side p:last-child {
+    padding-top: 2rem;
+    font-family: "Space Mono", monospace;
+    font-size: 0.8rem;
+}
+
+.booking label {
+    font-size: 0.9rem;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    display: block;
+    width: 100%;
+}
+  
+input[type=submit] {
+    width: 100%;
+    margin-top: 2rem;
+    background: rgb(186, 219, 231);
+    color: #000000;
+    padding: 1rem 2rem;
+    margin: 8px 0;
+    border: 1px transparent;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: rgb(223, 233, 237);
+}
+
+.booking .success-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.success-message .book-again-button {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.success-message p {
+    margin-top: 2rem;
+}
+
+.error-message {
+    color: rgb(249, 128, 128);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+@media screen and (max-width: 700px) {
+
+.booking {
+    flex-direction: column;
+}
+
+.booking .left-side, .booking .right-side {
+    width: 100%;
+}
+
+.package-name {
+    padding-top: unset;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    white-space: unset;
+    line-height: 2rem;
+}
+
+.booking .left-side {
+    padding: 2rem 2rem;
+    position: unset;
+    border-right: unset;
+}
+
+.booking .right-side {
+    padding: 2rem 2rem; 
+    min-height: 20rem;
+    border-top: 1px solid black;
+}
+
+.booking .success-message {
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 750px) and (max-width: 950px){
+
+    .booking .left-side {
+        padding: 5rem 3rem;
+    }
+
+    .booking .right-side {
+        padding: 2rem 2rem; 
+    }
+
+    .package-name {
+        white-space: unset;
+    }
+
+    .booking .success-message {
+        width: 100%;
+    }
+}
+
+@media screen and (min-height: 1180px){
+
+    .booking {
+        border-bottom: 1px solid black;
+    }
+}
+
+
