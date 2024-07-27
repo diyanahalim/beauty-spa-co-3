@@ -58,6 +58,8 @@ input[type=text], select {
     display: inline-block;
     border: 1px solid #000000;
     box-sizing: border-box; 
+    background: white;
+    color: black;
 }
 
 

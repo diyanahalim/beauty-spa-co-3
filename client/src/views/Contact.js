@@ -14,8 +14,8 @@ const Icon = styled(props => (
 ))`
 & > .y {
   display: block;
-  font-size: 2rem;
-  font-family: "Maisondeartisan" !important;
+  font-size: 3rem;
+  font-family: "Maisondeartisan";
   color: black;
 }
 & > .n {
@@ -23,8 +23,8 @@ const Icon = styled(props => (
 }
 .Mui-expanded & > .n {
   display: block;
-  font-size: 2rem;
-  font-family: "Teachers", sans-serif;
+  font-size: 3rem;
+  font-family: "Maisondeartisan";
   color: black;
 }
 .Mui-expanded & > .y {

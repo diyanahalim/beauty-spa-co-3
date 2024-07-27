@@ -1,11 +1,6 @@
 @font-face {
   font-family: "LagencyfreeRegular";   /*Can be any text*/
-  /* src: local("LagencyfreeRegular"),
-    url("./assets/fonts/LagencyfreeRegular.otf") format("opentype"); */
-  src: url("./assets/fonts/LagencyfreeRegular.otf") format("opentype"),
-        url("./assets/fonts/LagencyfreeRegular.woff") format("woff"),
-        url("./assets/fonts/LagencyfreeRegular.woff2") format("woff2");
-  /* unicode-range: U+26,U+201C,U+201D; */
+  src: url("./assets/fonts/LagencyfreeRegular.otf") format("opentype")
 }
 
 @font-face {
@@ -16,11 +11,12 @@
 
 @font-face {
   font-family: "Maisondeartisan";   /*Can be any text*/
-  /* src: local("Maisondeartisan"),
-    url("./assets/fonts/Maisondeartisan.otf") format("opentype"); */
   src: url("./assets/fonts/Maisondeartisan.otf") format("opentype"),
-        url("./assets/fonts/Maisondeartisan.woff") format("woff"),
-        url("./assets/fonts/Maisondeartisan.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Quote";   /*Can be any text*/
+  src: url("./assets/fonts/Maisondeartisan-2.otf") format("opentype"),
 }
 
 * {
@@ -28,7 +24,6 @@
   padding: 0;
   font-weight: 300;
   font-family: "Teachers", sans-serif;
-  /* font-family: "LagencyfreeRegular"; */
   box-sizing: border-box !important;
 }
 
@@ -45,7 +40,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   background: #fef5ed;
-  /* max-width: 100%; */
   width: 100%; /* full window width */
   overflow-x: hidden;
   overflow-y: scroll;
@@ -64,7 +58,3 @@ html, body, :root {
 }
 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
