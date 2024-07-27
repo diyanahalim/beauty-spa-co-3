@@ -160,7 +160,7 @@
 
 .review-container-right h1:before { 
     content: open-quote; 
-    /* font-family: "Quote"; */
+    font-family: "Quote";
 }
 
 .review-container-right h1:after  { 
@@ -233,6 +233,16 @@
 .review-container-left h1 {
     font-size: 2rem;
 }
+
+.review-container-right h1:before { 
+    content: open-quote; 
+    font-family: unset;
+}
+
+.review-container-right h1:after  { 
+    content: close-quote; 
+    font-family: unset;
+}
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px){
@@ -243,6 +253,16 @@
 
 .review-container-right {
     padding: 0 1rem;
+}
+
+.review-container-right h1:before { 
+    content: open-quote; 
+    font-family: unset;
+}
+
+.review-container-right h1:after  { 
+    content: close-quote; 
+    font-family: unset;
 }
 
 }
