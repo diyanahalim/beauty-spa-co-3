@@ -160,7 +160,7 @@
 
 .review-container-right h1:before { 
     content: open-quote; 
-    font-family: "Quote";
+    /* font-family: "Quote"; */
 }
 
 .review-container-right h1:after  { 

@@ -62,6 +62,7 @@ input[type=text], select, textarea {
     display: inline-block;
     border: 1px solid #000000;
     box-sizing: border-box;
+    font-size: 0.9rem;
 }
 
 input[type=submit] {
